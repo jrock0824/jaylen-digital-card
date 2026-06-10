@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jaylen Rider · Digital Card</title>
   <meta name="description" content="Jaylen Rider — Software &amp; Applied AI Engineer focused on security and automation. Connect on LinkedIn for software, AI, SOC, IAM, and cybersecurity roles.">
+  <meta property="og:title" content="Jaylen Rider · Digital Card">
+  <meta property="og:description" content="Software &amp; Applied AI Engineer · Security &amp; Automation. UCO Alumni. Connect on LinkedIn.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="jaylen-headshot.jpg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,15 +17,18 @@
     <article class="card" aria-labelledby="name-heading">
 
       <!-- HERO -->
-      <header class="hero">
-        <!-- TODO: replace with your headshot later -->
-        <!-- <img src="jaylen-headshot.jpg" alt="Portrait of Jaylen Rider" class="hero-avatar" /> -->
-        <div class="hero-avatar hero-avatar-placeholder" aria-hidden="true">JR</div>
+      <header class="hero" aria-labelledby="name-heading">
+        <img src="jaylen-headshot.jpg"
+             alt="Portrait of Jaylen Rider"
+             class="hero-avatar"
+             width="96"
+             height="96">
         <div class="hero-text">
           <h1 id="name-heading">Jaylen Rider</h1>
           <p class="hero-role">Software &amp; Applied AI Engineer · Security &amp; Automation</p>
+          <p class="hero-subline">Alumni · University of Central Oklahoma</p>
           <p class="hero-tagline">
-            Open to Software/AI engineering, SOC, IAM, and Cybersecurity roles.
+            Open to Software/AI engineering, SOC, IAM, and cybersecurity roles.
           </p>
         </div>
       </header>
@@ -86,8 +94,7 @@
       <!-- MEDIA -->
       <section class="section" aria-label="Media">
         <h2 class="section-title">Media</h2>
-        <div class="section-grid">
-        <!-- TODO: plug in actual video URLs as you record them -->
+        <div class="section-grid media-grid">
         <a class="link-chip"
            href="https://youtu.be/DkePbEyjV2M"
            target="_blank"
@@ -108,34 +115,146 @@
       <section class="section" aria-label="About Jaylen">
         <h2 class="section-title">About my work</h2>
         <p class="body-text">
-          Software and applied AI engineer focused on building security-critical, containerized platforms
-          that automate detection, incident response, and access workflows. Experienced with Docker,
-          FastAPI, PostgreSQL, and LLM tooling to reduce investigation time and improve reliability
-          in high-stakes environments.
+          Software and applied AI engineer focused on helping teams in the niches where they need
+          support—healthcare, education, security, and compliance—using Docker, FastAPI, PostgreSQL,
+          and local LLM tooling (Ollama, RAG, guardrails).
         </p>
         <p class="body-text">
-          I&apos;ve built <strong>MAGEN</strong>, a healthcare security platform with real-time log
-          correlation and insider-threat detection that cut investigation time by 80% and achieved
-          97%+ detection accuracy, and <strong>ASA</strong>, a trauma-informed AI assistant for
-          educators and social workers with safety-first LLM guardrails—validated with 15 users across
-          multiple states.
+          As founder of <strong>Ezra Intelligence</strong>, I build privacy-first AI where sensitive
+          data stays on-premise, aligned to HIPAA, FERPA, and compliance-heavy environments without
+          per-token cloud costs.
         </p>
         <p class="body-text">
-          I&apos;m looking for roles that blend backend engineering, applied AI, and security
-          operations—whether that&apos;s Software Engineer, AI Engineer, SOC analyst, IAM engineer,
-          or cybersecurity-focused developer.
+          Currently working on <strong>MAGEN</strong> (healthcare security—80% faster investigations,
+          97%+ detection) and <strong>ASA</strong> (trauma-informed AI for educators and social workers,
+          validated with 15 users across multiple states).
+        </p>
+        <p class="body-text">
+          I&apos;m open to roles blending backend engineering, applied AI, and security operations—Software
+          Engineer, AI Engineer, SOC analyst, IAM engineer, or cybersecurity-focused developer.
+        </p>
+      </section>
+
+      <!-- EZRA PIPELINE -->
+      <section class="section" aria-label="Ezra Intelligence pipeline">
+        <h2 class="section-title">Building at Ezra Intelligence</h2>
+        <p class="body-text">
+          Beyond MAGEN and ASA, we&apos;re developing vertically focused, data-sovereign AI products
+          across healthcare, education, legal, compliance, and enterprise, 20+ concepts in the pipeline.
+          Tap a product to see what it does.
+        </p>
+        <ul class="highlight-list">
+          <li>
+            <details class="highlight-details">
+              <summary class="highlight-summary">MedChart AI · Private clinical documentation</summary>
+              <p class="highlight-desc">
+                HIPAA-aligned ambient scribe for clinics, local transcription, SOAP notes, and ICD-10
+                coding without PHI leaving the facility network.
+              </p>
+            </details>
+          </li>
+          <li>
+            <details class="highlight-details">
+              <summary class="highlight-summary">SovereignBot · White-label private AI builder</summary>
+              <p class="highlight-desc">
+                No-code toolkit for businesses to deploy custom assistants on their own knowledge bases
+                using local Ollama inference, private ChatGPT for your company.
+              </p>
+            </details>
+          </li>
+          <li>
+            <details class="highlight-details">
+              <summary class="highlight-summary">ScribeDesk · Government &amp; compliance document AI</summary>
+              <p class="highlight-desc">
+                On-premise document classification, regulatory change analysis, and audit trails for
+                agencies and regulated industries, air-gap capable.
+              </p>
+            </details>
+          </li>
+          <li>
+            <details class="highlight-details">
+              <summary class="highlight-summary">TutorMind &amp; EduAuthor · School-deployed learning AI</summary>
+              <p class="highlight-desc">
+                District-hosted tutoring and curriculum tools, Socratic homework help, lesson plans, and
+                teacher dashboards with student data kept on school servers (FERPA-friendly).
+              </p>
+            </details>
+          </li>
+          <li>
+            <details class="highlight-details">
+              <summary class="highlight-summary">PolicyPilot · Regulatory compliance assistant</summary>
+              <p class="highlight-desc">
+                RAG-powered Q&amp;A against OSHA, HIPAA, SOC 2, and other frameworks, gap analyses,
+                policy drafts, and training modules generated on-premise.
+              </p>
+            </details>
+          </li>
+          <li>
+            <details class="highlight-details">
+              <summary class="highlight-summary">CodePilot Local · Private AI coding assistant</summary>
+              <p class="highlight-desc">
+                IDE-integrated autocomplete and repo-aware RAG for teams that can&apos;t send code to
+                cloud copilots, security scanning and test generation included.
+              </p>
+            </details>
+          </li>
+        </ul>
+        <p class="pipeline-note">
+          Also in development: LexAI (legal), CalmCompanion (mental wellness), PrivateCRM,
+          FactoryMind (manufacturing), RecruiterAI, PatientNavigator, SmartAudit, and more.
         </p>
       </section>
 
       <!-- HIGHLIGHTS -->
       <section class="section" aria-label="Highlights">
         <h2 class="section-title">Highlights</h2>
-        <ul class="badge-list">
-          <li class="badge">1st Place · 90-Second Pitch · i2E Entrepreneur&apos;s Cup 2026</li>
-          <li class="badge">2nd Place · High Growth Undergraduate · i2E Entrepreneur&apos;s Cup 2026</li>
-          <li class="badge">Top Scholar · Ronald E. McNair Scholars · 2025 &amp; 2026</li>
-          <li class="badge">1957 Award · UCO 2026</li>
-          <li class="badge">Omega Psi Phi Undergraduate of the Year · 2024 &amp; 2025</li>
+        <p class="highlights-hint">Tap an award to learn what it means</p>
+        <ul class="highlight-list">
+          <li>
+            <details class="highlight-details">
+              <summary class="highlight-summary">1st Place · 90-Second Pitch · i2E Entrepreneur&apos;s Cup 2026</summary>
+              <p class="highlight-desc">
+                Won Oklahoma&apos;s statewide fast-pitch competition for Ezra Intelligence—delivering
+                a 90-second investor pitch on MAGEN at the i2E / Love&apos;s Entrepreneur&apos;s Cup.
+              </p>
+            </details>
+          </li>
+          <li>
+            <details class="highlight-details">
+              <summary class="highlight-summary">2nd Place · High Growth Undergraduate · i2E Entrepreneur&apos;s Cup 2026</summary>
+              <p class="highlight-desc">
+                Placed second in the high-growth undergraduate track at the same competition,
+                recognizing Ezra&apos;s scalable security-automation platform and business model.
+              </p>
+            </details>
+          </li>
+          <li>
+            <details class="highlight-details">
+              <summary class="highlight-summary">Top Scholar · Ronald E. McNair Scholars · 2025 &amp; 2026</summary>
+              <p class="highlight-desc">
+                Selected twice for the federal McNair Scholars program—funded research, graduate-school
+                prep, and mentorship for students pursuing doctoral study.
+              </p>
+            </details>
+          </li>
+          <li>
+            <details class="highlight-details">
+              <summary class="highlight-summary">1957 Award · UCO 2026</summary>
+              <p class="highlight-desc">
+                University of Central Oklahoma honor recognizing outstanding leadership, scholarship,
+                and service to the campus community.
+              </p>
+            </details>
+          </li>
+          <li>
+            <details class="highlight-details">
+              <summary class="highlight-summary">Omega Psi Phi Undergraduate of the Year · 2024 &amp; 2025</summary>
+              <p class="highlight-desc">
+                Named Undergraduate of the Year two years running for leadership, academic excellence,
+                and community service within Omega Psi Phi Fraternity, Inc.
+              </p>
+            </details>
+          </li>
         </ul>
       </section>
 
@@ -152,7 +271,7 @@
 
       <footer class="footer">
         <p class="footer-text">
-          Tulsa, OK · Open to relocation ·
+          Tulsa, OK · UCO Alumni · Open to relocation ·
           <a href="mailto:jaylenr2002@icloud.com">jaylenr2002@icloud.com</a>
         </p>
       </footer>
