@@ -104,9 +104,32 @@ body {
 
 .hero-tagline {
   margin: calc(var(--spacing-unit) * 0.6) 0 0;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
   line-height: 1.45;
+  font-style: italic;
+}
+
+.open-badge {
+  display: inline-block;
+  margin: 0 0 calc(var(--spacing-unit) * 0.75);
+  padding: calc(var(--spacing-unit) * 0.35) calc(var(--spacing-unit) * 1);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #166534;
+  background-color: rgba(22, 101, 52, 0.1);
+  border: 1px solid rgba(22, 101, 52, 0.25);
+  border-radius: var(--radius-md);
+}
+
+.hero-cta {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit) * 1);
+  width: 100%;
+  margin-top: calc(var(--spacing-unit) * 0.5);
 }
 
 .section {
@@ -201,6 +224,10 @@ body {
   gap: calc(var(--spacing-unit) * 1);
 }
 
+.hero-cta .btn + .btn {
+  margin-top: 0;
+}
+
 .btn + .btn {
   margin-top: calc(var(--spacing-unit) * 1);
 }
@@ -286,6 +313,84 @@ body {
   justify-self: center;
   width: max-content;
   max-width: 100%;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit) * 1.25);
+}
+
+.project-card {
+  padding: calc(var(--spacing-unit) * 1.5);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(0, 71, 171, 0.18);
+  background-color: var(--badge-bg);
+}
+
+.project-name {
+  margin: 0 0 calc(var(--spacing-unit) * 0.25);
+  font-size: 1rem;
+  color: var(--cobalt);
+}
+
+.project-tagline {
+  margin: 0 0 calc(var(--spacing-unit) * 0.75);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.project-desc {
+  margin: 0 0 calc(var(--spacing-unit) * 1);
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--text-main);
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--spacing-unit) * 0.75);
+}
+
+.project-links .link-chip {
+  font-size: 0.8rem;
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid rgba(0, 71, 171, 0.15);
+  background-color: #000;
+  scroll-margin: 15vh;
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-label {
+  margin: calc(var(--spacing-unit) * 0.75) 0 calc(var(--spacing-unit) * 1.5);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.video-label:last-child {
+  margin-bottom: 0;
 }
 
 .media-grid {
@@ -441,6 +546,88 @@ body {
   color: var(--text-muted);
   text-align: center;
   letter-spacing: 0.04em;
+}
+
+.footer-brand strong {
+  color: var(--cobalt);
+}
+
+.form-intro {
+  text-align: center;
+}
+
+.form-success {
+  margin: 0 0 calc(var(--spacing-unit) * 1.25);
+  padding: calc(var(--spacing-unit) * 1) calc(var(--spacing-unit) * 1.25);
+  font-size: 0.85rem;
+  text-align: center;
+  color: #166534;
+  background-color: rgba(22, 101, 52, 0.1);
+  border: 1px solid rgba(22, 101, 52, 0.25);
+  border-radius: var(--radius-sm);
+}
+
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit) * 1.25);
+}
+
+.form-honey {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit) * 0.5);
+}
+
+.form-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.inquiry-form input,
+.inquiry-form select,
+.inquiry-form textarea {
+  width: 100%;
+  padding: calc(var(--spacing-unit) * 1) calc(var(--spacing-unit) * 1.25);
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 71, 171, 0.22);
+  border-radius: var(--radius-sm);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.inquiry-form input:focus,
+.inquiry-form select:focus,
+.inquiry-form textarea:focus {
+  outline: none;
+  border-color: var(--cobalt);
+  box-shadow: 0 0 0 3px rgba(0, 71, 171, 0.12);
+}
+
+.inquiry-form textarea {
+  resize: vertical;
+  min-height: 96px;
+}
+
+.form-submit {
+  margin-top: calc(var(--spacing-unit) * 0.5);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 a:focus-visible {

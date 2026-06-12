@@ -3,20 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jaylen Rider · Portfolio</title>
-  <meta name="description" content="Jaylen Rider — Software &amp; Applied AI Engineer focused on security and automation. Connect on LinkedIn for software, AI, SOC, IAM, and cybersecurity roles.">
-  <meta property="og:title" content="Jaylen Rider · Portfolio">
-  <meta property="og:description" content="Software &amp; Applied AI Engineer · Security &amp; Automation. UCO Alumni. Connect on LinkedIn.">
+  <title>Jaylen Rider · Software &amp; Applied AI Engineer</title>
+  <meta name="description" content="Jaylen Rider — Software &amp; Applied AI Engineer building privacy-first AI at Ezra Intelligence. MAGEN (healthcare security) and ASA (trauma-informed AI). Open to software, AI, SOC, IAM, and cybersecurity roles.">
+  <meta name="keywords" content="Jaylen Rider, software engineer, applied AI, cybersecurity, SOC, IAM, Ezra Intelligence, MAGEN, Tulsa, UCO">
+  <link rel="canonical" href="https://jrock0824.github.io/jaylen-digital-card/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jaylen Rider · Software &amp; Applied AI Engineer">
+  <meta property="og:description" content="Privacy-first AI · Healthcare security · Trauma-informed tools. UCO Alumni. Open to software, AI, and cybersecurity roles.">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary">
-  <meta property="og:image" content="jaylen-headshot.jpg">
+  <meta property="og:url" content="https://jrock0824.github.io/jaylen-digital-card/">
+  <meta property="og:image" content="https://jrock0824.github.io/jaylen-digital-card/jaylen-headshot.jpg">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jaylen Rider · Software &amp; Applied AI Engineer">
+  <meta name="twitter:description" content="Privacy-first AI · Healthcare security · Trauma-informed tools. Connect on LinkedIn.">
+  <meta name="twitter:image" content="https://jrock0824.github.io/jaylen-digital-card/jaylen-headshot.jpg">
+
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Analytics: replace G-XXXXXXXXXX with your measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jaylen Rider",
+    "jobTitle": "Software & Applied AI Engineer",
+    "url": "https://jrock0824.github.io/jaylen-digital-card/",
+    "image": "https://jrock0824.github.io/jaylen-digital-card/jaylen-headshot.jpg",
+    "email": "jaylenr2002@icloud.com",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Central Oklahoma"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Ezra Intelligence"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/jaylen-rider-746168254/",
+      "https://github.com/jrock0824"
+    ],
+    "knowsAbout": [
+      "Software Engineering",
+      "Applied AI",
+      "Cybersecurity",
+      "Security Operations",
+      "Identity and Access Management"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tulsa",
+      "addressRegion": "OK",
+      "addressCountry": "US"
+    }
+  }
+  </script>
 </head>
 <body>
   <main class="page">
     <article class="card" aria-labelledby="name-heading">
 
-      <!-- HERO -->
+      <!-- HERO — primary CTA above the fold (playbook: recruiter conversion) -->
       <header class="hero" aria-labelledby="name-heading">
         <img src="jaylen-headshot.jpg"
              alt="Portrait of Jaylen Rider"
@@ -24,36 +82,78 @@
              width="96"
              height="96">
         <div class="hero-text">
+          <p class="open-badge" aria-label="Open to work on LinkedIn">Open to work</p>
           <h1 id="name-heading">Jaylen Rider</h1>
           <p class="hero-role">Software &amp; Applied AI Engineer · Security &amp; Automation</p>
-          <p class="hero-subline">Alumni · University of Central Oklahoma</p>
-          <p class="hero-tagline">
-            Open to Software/AI engineering, SOC, IAM, and cybersecurity roles.
-          </p>
+          <p class="hero-subline">Founder, Ezra Intelligence · UCO Alumni</p>
+        </div>
+
+        <div class="hero-cta" aria-label="Primary actions">
+          <a class="btn btn-primary"
+             href="https://www.linkedin.com/in/jaylen-rider-746168254/"
+             target="_blank"
+             rel="me noopener noreferrer">
+            <span class="btn-anchor" aria-hidden="true">→</span>
+            <span class="btn-copy">
+              <span class="btn-title">Connect on LinkedIn</span>
+              <span class="btn-context">Primary · recruiters &amp; hiring managers</span>
+            </span>
+          </a>
         </div>
       </header>
 
-      <!-- CONNECT & CONTACT -->
-      <section class="section" aria-label="Connect and contact">
-        <h2 class="section-title">Connect &amp; contact</h2>
-
-        <a class="btn btn-primary"
-           href="https://www.linkedin.com/in/jaylen-rider-746168254/"
-           target="_blank"
-           rel="noopener noreferrer">
-          Connect with me on LinkedIn
-        </a>
-
-        <a class="btn btn-secondary"
-           href="mailto:jaylenr2002@icloud.com?subject=Exploring%20a%20role%20with%20you">
-          Email me about a role or project
-        </a>
-
-        <a class="btn btn-secondary"
-           href="jaylen.vcf"
-           download="Jaylen_Rider.vcf">
-          Download my contact card
-        </a>
+      <!-- FEATURED WORK — project showcase with proof metrics -->
+      <section class="section" aria-label="Featured projects">
+        <h2 class="section-title">Featured work</h2>
+        <ul class="project-list">
+          <li class="project-card">
+            <h3 class="project-name">MAGEN</h3>
+            <p class="project-tagline">Healthcare security platform</p>
+            <p class="project-desc">
+              On-premise security automation for compliance-heavy environments.
+              80% faster investigations, 97%+ detection rate.
+            </p>
+            <div class="project-links">
+              <a class="link-chip video-jump"
+                 href="#magen-video"
+                 data-video-target="magen-video"
+                 data-video-id="DkePbEyjV2M">
+                Watch 2-min overview
+              </a>
+            </div>
+          </li>
+          <li class="project-card">
+            <h3 class="project-name">ASA</h3>
+            <p class="project-tagline">Trauma-informed AI assistant</p>
+            <p class="project-desc">
+              Privacy-first tool for educators and social workers. Validated with
+              15 users across multiple states. 2nd place overall, High Growth Undergraduate
+              division, i2E Entrepreneur&apos;s Cup 2026.
+            </p>
+            <div class="project-links">
+              <a class="link-chip video-jump"
+                 href="#asa-video"
+                 data-video-target="asa-video"
+                 data-video-id="lYKoNdcYQZM">
+                Watch 2-min overview
+              </a>
+            </div>
+          </li>
+          <li class="project-card">
+            <h3 class="project-name">Ezra Intelligence</h3>
+            <p class="project-tagline">Workflow software for underserved niches</p>
+            <p class="project-desc">
+              A company building software that reduces burnout and improves workflows
+              for different niches&mdash;healthcare, education, legal, compliance, and beyond.
+            </p>
+            <div class="project-links">
+              <a class="link-chip"
+                 href="#ezra-pipeline">
+                See product pipeline
+              </a>
+            </div>
+          </li>
+        </ul>
       </section>
 
       <!-- RESUME & PROFESSIONAL RESOURCES -->
@@ -79,7 +179,7 @@
         <a class="btn btn-secondary btn-secondary--outline"
            href="https://github.com/jrock0824"
            target="_blank"
-           rel="noopener noreferrer">
+           rel="me noopener noreferrer">
           GitHub · Engineering work
         </a>
 
@@ -91,31 +191,34 @@
         </a>
       </section>
 
-      <!-- MEDIA -->
+      <!-- MEDIA — embedded video portfolio -->
       <section class="section" aria-label="Media">
         <h2 class="section-title">Media</h2>
-        <div class="section-grid media-grid">
-        <a class="link-chip"
-           href="https://youtu.be/DkePbEyjV2M"
-           target="_blank"
-           rel="noopener noreferrer">
-          Watch: 2-min overview of my security platform
-        </a>
-
-        <a class="link-chip"
-           href="https://youtu.be/lYKoNdcYQZM"
-           target="_blank"
-           rel="noopener noreferrer">
-          Watch: 2-min overview of my trauma-informed AI assistant
-        </a>
+        <div class="video-embed" id="magen-video" tabindex="-1">
+          <iframe data-video-id="DkePbEyjV2M"
+                  src="https://www.youtube.com/embed/DkePbEyjV2M"
+                  title="MAGEN security platform overview"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
         </div>
+        <p class="video-label">MAGEN · Healthcare security platform</p>
+        <div class="video-embed" id="asa-video" tabindex="-1">
+          <iframe data-video-id="lYKoNdcYQZM"
+                  src="https://www.youtube.com/embed/lYKoNdcYQZM"
+                  title="ASA trauma-informed AI assistant overview"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <p class="video-label">ASA · Trauma-informed AI assistant</p>
       </section>
 
       <!-- ABOUT MY WORK -->
       <section class="section" aria-label="About Jaylen">
         <h2 class="section-title">About my work</h2>
         <p class="body-text">
-          Software and applied AI engineer focused on helping underrepresented niches 
+          Software and applied AI engineer focused on helping underrepresented niches
           reduce burnout and improve workflows using Docker, FastAPI, PostgreSQL, and local LLM tooling (Ollama, RAG, guardrails).
         </p>
         <p class="body-text">
@@ -124,7 +227,7 @@
           per-token cloud costs.
         </p>
         <p class="body-text">
-          Currently working on <strong>MAGEN</strong> (healthcare security—80% faster investigations,
+          Currently working on <strong>MAGEN</strong> (healthcare security&mdash;80% faster investigations,
           97%+ detection) and <strong>ASA</strong> (trauma-informed AI for educators and social workers,
           validated with 15 users across multiple states).
         </p>
@@ -135,7 +238,7 @@
       </section>
 
       <!-- EZRA PIPELINE -->
-      <section class="section" aria-label="Ezra Intelligence pipeline">
+      <section class="section" id="ezra-pipeline" aria-label="Ezra Intelligence pipeline">
         <h2 class="section-title">Building at Ezra Intelligence</h2>
         <p class="body-text">
           Beyond MAGEN and ASA, we&apos;re developing vertically focused, data-sovereign AI products
@@ -204,7 +307,7 @@
         </p>
       </section>
 
-      <!-- HIGHLIGHTS -->
+      <!-- HIGHLIGHTS — social proof -->
       <section class="section" aria-label="Highlights">
         <h2 class="section-title">Highlights</h2>
         <p class="highlights-hint">Tap an award to learn what it means</p>
@@ -268,14 +371,124 @@
         </ul>
       </section>
 
+      <!-- ROLE INQUIRY FORM — playbook: internship/role inquiry capture -->
+      <section class="section" aria-label="Role or project inquiry">
+        <h2 class="section-title">Inquire about a role</h2>
+        <p class="body-text form-intro">
+          Hiring manager or recruiter? Leave your details&mdash;I respond within 48 hours.
+        </p>
+        <p class="form-success" id="form-success" hidden role="status">
+          Inquiry sent&mdash;I&apos;ll respond within 48 hours.
+        </p>
+        <form class="inquiry-form"
+              action="https://formsubmit.co/jaylenr2002@icloud.com"
+              method="POST">
+          <input type="hidden" name="_subject" value="Portfolio inquiry from jaylen-digital-card">
+          <input type="hidden" name="_next" value="https://jrock0824.github.io/jaylen-digital-card/?sent=1">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <label class="form-field">
+            <span class="form-label">Your name</span>
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+
+          <label class="form-field">
+            <span class="form-label">Email</span>
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+
+          <label class="form-field">
+            <span class="form-label">Inquiry type</span>
+            <select name="inquiry_type" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="Full-time role">Full-time role</option>
+              <option value="Internship">Internship</option>
+              <option value="Contract / project">Contract / project</option>
+              <option value="Ezra Intelligence partnership">Ezra Intelligence partnership</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+
+          <label class="form-field">
+            <span class="form-label">Message</span>
+            <textarea name="message" rows="4" required placeholder="Role, team, or project details"></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-primary form-submit">Send inquiry</button>
+        </form>
+      </section>
+
+      <!-- SECONDARY CONTACT -->
+      <section class="section" aria-label="Additional contact options">
+        <h2 class="section-title">More ways to reach me</h2>
+        <div class="cta-tier-secondary">
+          <a class="btn btn-secondary"
+             href="mailto:jaylenr2002@icloud.com?subject=Exploring%20a%20role%20with%20you">
+            Email me directly
+          </a>
+
+          <a class="btn btn-secondary btn-secondary--outline"
+             href="jaylen.vcf"
+             download="Jaylen_Rider.vcf">
+            Download contact card
+          </a>
+        </div>
+      </section>
+
       <footer class="footer">
         <p class="footer-text">
           Tulsa, OK · UCO Alumni · Open to relocation ·
           <a href="mailto:jaylenr2002@icloud.com">jaylenr2002@icloud.com</a>
         </p>
+        <p class="footer-brand">
+          Portfolio by Jaylen Rider · Workflow software:
+          <strong>Ezra Intelligence</strong>
+        </p>
       </footer>
 
     </article>
   </main>
+  <script>
+    if (new URLSearchParams(window.location.search).get('sent') === '1') {
+      var el = document.getElementById('form-success');
+      if (el) el.hidden = false;
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+
+    function resetVideo(iframe) {
+      var id = iframe.dataset.videoId;
+      if (id) iframe.src = 'https://www.youtube.com/embed/' + id;
+    }
+
+    function playVideo(iframe) {
+      var id = iframe.dataset.videoId;
+      if (id) iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+    }
+
+    document.querySelectorAll('.video-jump').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var target = document.getElementById(link.dataset.videoTarget);
+        var iframe = target && target.querySelector('iframe');
+        if (!target || !iframe) return;
+
+        document.querySelectorAll('.video-embed iframe').forEach(function (other) {
+          if (other !== iframe) resetVideo(other);
+        });
+
+        var played = false;
+        function startPlayback() {
+          if (played) return;
+          played = true;
+          playVideo(iframe);
+        }
+
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        window.addEventListener('scrollend', startPlayback, { once: true });
+        setTimeout(startPlayback, 800);
+      });
+    });
+  </script>
 </body>
 </html>
